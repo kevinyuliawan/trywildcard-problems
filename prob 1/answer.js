@@ -1,5 +1,9 @@
 /*
-The idea here is to take the input, make two arrays by having the original and transposing it, check both of their lines (not the most efficient), and for each line, calculate the amount of permutations possible using spaces!/(spaces-5)! as long as there is at least 5 or more open spaces. Then add up the total amount of permutations.
+The idea here is to take the input, make two arrays by having the original and transposing it, 
+check both of their lines (not the most efficient), and for each line, 
+calculate the amount of permutations possible using spaces!/(spaces-5)! 
+if there is at least 5 or more open spaces in the line currently being checked. 
+Then add up the total amount of permutations.
 */
 
 var lineCount = 0;
