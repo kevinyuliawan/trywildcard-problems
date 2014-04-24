@@ -6,7 +6,7 @@ if there is at least 5 or more open spaces in the line currently being checked.
 Then add up the total amount of permutations.
 */
 
-var lineCount = 0;
+var lineCount = 0; //for debugging purposes
 
 function fact(num) {
     var rval = 1;
@@ -37,7 +37,7 @@ function check(line) {
     if (charCount >= 5) { //calculate permutations
         result = fact(charCount) / fact(charCount - 5);
     };
-    console.log("result: " + result + " | " + "LC: " + lineCount + " | " + line);
+    console.log("result: " + result + " | " + "LC: " + lineCount + " | " + line); //for debugging purposes
     return result;
 };
 
