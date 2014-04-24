@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>TryWildCard prob 1</title>
+  <script src="answer.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("#answer").text(parse($("#inputFile").val()));
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <textarea rows="4" cols="50" id="inputFile"></textarea>
+  <button type="button">Submit</button>
+  <p>The number of lines is: <span id="answer" style="font-weight:bold;"></span></p>
+</body>
+
+</html>
